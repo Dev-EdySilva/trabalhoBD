@@ -47,7 +47,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',  
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'sistemaRH.middleware.AuthMiddleware'
 ]
 
@@ -78,13 +78,23 @@ WSGI_APPLICATION = 'sistemaRH.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sys_rhin',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '/opt/lampp/var/mysql/mysql.sock',
-        'PORT': '3306'
+        'NAME': 'geeksilva$sys_rhin',
+        'USER': 'geeksilva',
+        'PASSWORD': '3dy$!lv4',
+        'HOST': 'geeksilva.mysql.pythonanywhere-services.com'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'sys_rhin',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': '/opt/lampp/var/mysql/mysql.sock',
+#         'PORT': '3306'
+#     }
+# }
 
 
 # Password validation
